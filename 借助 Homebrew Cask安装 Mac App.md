@@ -85,7 +85,7 @@ brew cask install <软件名1> <软件名2> <软件名3>
 - brew cask install dropbox 安装 Dropbox
 - brew cask install java 安装 Java 等开发环境也是可以的
 
-以上几个命令只是简单举例，截止目前，Homebrew Cask 已经收录了近 2100 个软件，足够满足大多数人的需求，你也可以到 [Homebrew Cask]() 官网搜索看看有没有你想要的软件程序。
+以上几个命令只是简单举例，截止目前，Homebrew Cask 已经收录了近 2100 个软件，足够满足大多数人的需求，你也可以到 [Homebrew Cask](https://caskroom.github.io) 官网搜索看看有没有你想要的软件程序。
 
 ## Homebrew 还能做什么
 
