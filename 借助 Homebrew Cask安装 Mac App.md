@@ -67,4 +67,53 @@ brew cask install <软件名1> <软件名2> <软件名3>
 
 相信有些朋友已经在 Aria2 的文章中安装过 Homebrew 套件管理器了，上一步的 Xcode 安装也是为这一步做准备。如果你还没有安装过 Homebrew，方法也很简单，打开终端运行下列代码就可以了：
 
+`/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"`
+
+## 下载软件
+
+完成上述操作步骤，就下来就可以开始为你的 Mac 安装软件了。
+
+使用 Homebrew 安装 App 非常简单，这里需要用到的是基于 Homebrew 的扩展 Homebrew Cask，具体方法是在「终端」中输入类似下列形式的代码并运行：
+
+`brew cask install 软件名`
+
+这里的「软件名」就是我们所要安装软件的名称，下面列举几个常用软件的安装命令大家就会明白了：
+
+- brew cask install google-chrome 安装 Chrome 浏览器
+- brew cask install alfred 安装 Alfred
+- brew cask install fliqlo 安装屏保程序 Fliqlo
+- brew cask install dropbox 安装 Dropbox
+- brew cask install java 安装 Java 等开发环境也是可以的
+
+以上几个命令只是简单举例，截止目前，Homebrew Cask 已经收录了近 2100 个软件，足够满足大多数人的需求，你也可以到 [Homebrew Cask]() 官网搜索看看有没有你想要的软件程序。
+
+## Homebrew 还能做什么
+
+Homebrew 当然不只是能做「安装软件」这一件事，我整理了一些 Homebrew 的常用命令，可以满足各种需求：
+
+- brew cask uninstall 软件名 卸载通过 Homebrew Cask 安装的软件
+- brew cask search 列出所有可以被安装的软件，当然你也可以直接前往上文提供的 Homebrew Cask 搜索。
+- brew cask search google 这里是查找所有与 google 有关的软件，google 关键词可以自行替换
+- brew cask info 软件名 查找相关软件的信息
+- brew cask cleanup 删除 Homebrew Cask 下载的包
+- brew cask list 列出通过 Homebrew Cask 安装的包
+- brew cask update 更新 Homebrew Cask
+
+要注意的是，Homebrew Cask 并没有提供相关的软件更新命令，这里我们可以直接使用软件内的更新功能就可以了。
+
+之前少数派写过增强 Mac「预览」功能（QuickLook）的教程，里面有提到很多小插件，其实你也可以直接用 Homebrew 快速下载这些插件，比如：
+
+- brew cask install qlmarkdown 安装 Markdown 预览（QuickLook）插件
+- brew cask install qlcolorcode 代码块高亮
+- brew cask install qlvideo 视频预览插件
+
+当然关于 Homebrew 以及 Homebrew Cask 的用法还有很多，这里就不一一介绍。
+
+## 小结
+
+写到这里，还是不免唠叨地要说，「终端」和「命令行」并不是只有极客或开发人员才能玩的东西，我们大可不必先入为主的产生抗拒心理。
+
+Homebrew 这种方式不仅能让你更快更好的解决软件安装的问题，节省更多时间，也会为你开启一个新世界的大门，慢慢地你会发现用「命令行」你还能做很多事情。
+
+
 
