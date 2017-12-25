@@ -11,6 +11,16 @@
 
 **[Top 20 OS X command-line secrets for power users](https://www.infoworld.com/article/2614879/mac-os-x/mac-os-x-top-20-os-x-command-line-secrets-for-power-users.html?page=4)**
 
+# 4. [OS X 命令行启蒙]()
+
+**[OS X Command Line Primer](https://developer.apple.com/library/content/documentation/OpenSource/Conceptual/ShellScripting/CommandLInePrimer/CommandLine.html)**
+
+
+# 5. An A-Z Index of the Apple macOS command line
+
+**[An A-Z Index of the Apple macOS command line](https://ss64.com/osx/)**
+
+
 
 ---
 # Two WebSite, 命令行参考指南
