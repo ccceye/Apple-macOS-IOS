@@ -3,10 +3,16 @@
 **[Eight Terminal Utilities Every OS X Command Line User Should Know](http://www.mitchchn.me/2014/os-x-terminal/)**
 
 
-# 2. Mac和Linux用户应知道的10个Unix命令
+# 2. [Mac和Linux用户应知道的10个Unix命令]()
 
 **[10 Unix commands every Mac and Linux user should know](https://www.infoworld.com/article/3193969/linux/10-unix-commands-every-mac-and-linux-user-should-know.html)**
 
+# 3. [极客最常用的20条命令行秘密]()
+
+**[Top 20 OS X command-line secrets for power users](https://www.infoworld.com/article/2614879/mac-os-x/mac-os-x-top-20-os-x-command-line-secrets-for-power-users.html?page=4)**
+
+
+---
 # Two WebSite, 命令行参考指南
 
 [SS64](https://ss64.com) is a reference guide containing syntax and examples for the most prevalent computing commands (Database and Operating System). 
