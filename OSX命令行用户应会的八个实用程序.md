@@ -124,5 +124,5 @@ You can have fun with Homebrew too: `brew install archey` will get you Archey, a
 
 But the best part about Homebrew? It keeps all its files in a single directory: `/usr/local/`. That means you can install newer versions of system software, such as `python` and `mysql`, without interfering with the built-in equivalents. And if you ever want to get rid of your Homebrew installation, it’s easy to remove.
 
-Edit—May 15: Someone suggested to me that that you should not blindly delete the contents of `/usr/local/`. That’s a fair precaution. To remove Homebrew safely, use the **[uninstall script](https://gist.github.com/mxcl/1173223).
+**Edit—May 15**: Someone suggested to me that that you should not blindly delete the contents of `/usr/local/`. That’s a fair precaution. To remove Homebrew safely, use the **[uninstall script](https://gist.github.com/mxcl/1173223)**.
 
