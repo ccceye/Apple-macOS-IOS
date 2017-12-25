@@ -47,4 +47,66 @@ That’s exactly what `mdfind` does. Anything `Spotlight` can find, `mdfind` can
 
 The mdfind database should stay up to date in the background, but you can also troubleshoot it (as well as Spotlight) using `mdutil`. If Spotlight isn’t working the way it should, `mdutil -E` will erase the index and rebuild it from scratch. You can also turn off indexing entirely with `mdutil -i off`.
 
+## 4. screencapture
+
+`screencapture` lets you take many different kinds of screenshots. It’s similar to `Grab.app` and the keyboard shortcuts `cmd + shift + 3` and `cmd + shift + 4`, except it’s far more flexible. Here are just a few different ways you can use screencapture:
+
+Capture the contents of the screen, including the cursor, and attach the resulting image (named ‘image.png’) to a new Mail message:
+
+`$ screencapture -C -M image.png`
+
+Select a window using your mouse, then capture its contents without the window’s drop shadow and copy the image to the clipboard:
+
+`$ screencapture -c -W`
+
+Capture the screen after a delay of 10 seconds and then open the new image in `Preview`:
+
+`$ screencapture -T 10 -P image.png`
+
+Select a portion of the screen with your mouse, capture its contents, and save the image as a `pdf`:
+
+`$ screencapture -s -t pdf image.pdf`
+
+To see more options, type `screencapture --help`
+
+## 5. launchctl
+
+`launchctl` lets you interact with the OS X init script system, `launchd`. With launch daemons and launch agents, you can control the services that start up when you boot your computer. You can even set up scripts to run periodically or at timed intervals in the background, similar to cron jobs on Linux.
+
+For example, if you’d like to have the Apache web server start automatically when you turn on your Mac, simply type:
+
+`$ sudo launchctl load -w /System/Library/LaunchDaemons/org.apache.httpd.plist`
+
+Running `launchctl list` will show you what launch scripts are currently loaded. `sudo launchctl unload [path/to/script]` will stop and unload running scripts, and adding the `-w` flag will remove those scripts permanently from your boot sequence. I like to run this one on all the auto-update “helpers” created by Adobe apps and Microsoft Office.
+
+Launchd scripts are stored in the folllowing locations:
+
+```
+~/Library/LaunchAgents    
+/Library/LaunchAgents          
+/Library/LaunchDaemons
+/System/Library/LaunchAgents
+/System/Library/LaunchDaemons
+```
+
+To see what goes into a launch agent or daemon, there’s a great blog post by Paul Annesley that walks you through the file format. And if you’d like to learn how to write your own `launchd` scripts, Apple provides some helpful documentation on their Developer site. There’s also the fantastic Lingon app if you’d prefer to avoid the command line entirely.
+
+
+
+## 6. say
+
+This is a fun one: say converts text to speech, using the same TTS engine OS X uses for VoiceOver. Without any options, say will simply speak whatever text you give it out loud.:
+
+`$ say "Never trust a computer you can't lift."`
+
+You can also use say to speak the contents of a text file with the -f flag, and you can store the resulting audio clip with the -o flag:
+
+`$ say -f mynovel.txt -o myaudiobook.aiff`
+
+The say command can be useful in place of console logging or alert sounds in scripts. For instance, you can set up an Automator or Hazel script to do batch file processing and then announce the task’s completion with say.
+
+But the most enjoyable use for say is rather more sinister: if you have ssh access to a friend or coworker’s Mac, you can silently log into their machine and haunt them through the command line. Give ‘em a Siri-ous surprise.
+
+You can set the voice (and language!) used by say by changing the default setting in the Dictation & Speech panel in System Preferences.
+
 
