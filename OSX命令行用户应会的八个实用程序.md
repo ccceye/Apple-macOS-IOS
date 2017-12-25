@@ -95,18 +95,22 @@ To see what goes into a launch agent or daemon, there’s a great blog post by P
 
 ## 6. say
 
-This is a fun one: say converts text to speech, using the same TTS engine OS X uses for VoiceOver. Without any options, say will simply speak whatever text you give it out loud.:
+This is a fun one: `say` converts text to speech, using the same `TTS engine` OS X uses for `VoiceOver`. Without any options, say will simply speak whatever text you give it out loud.:
 
 `$ say "Never trust a computer you can't lift."`
 
-You can also use say to speak the contents of a text file with the -f flag, and you can store the resulting audio clip with the -o flag:
+You can also use say to speak the contents of a text file with the `-f` flag, and you can store the resulting audio clip with the `-o` flag:
 
 `$ say -f mynovel.txt -o myaudiobook.aiff`
 
-The say command can be useful in place of console logging or alert sounds in scripts. For instance, you can set up an Automator or Hazel script to do batch file processing and then announce the task’s completion with say.
+The `say` command can be useful in place of console logging or alert sounds in scripts. For instance, you can set up an Automator or Hazel script to do batch file processing and then announce the task’s completion with `say`.
 
-But the most enjoyable use for say is rather more sinister: if you have ssh access to a friend or coworker’s Mac, you can silently log into their machine and haunt them through the command line. Give ‘em a Siri-ous surprise.
+But the most enjoyable use for `say` is rather more sinister: if you have `ssh` access to a friend or coworker’s Mac, you can silently log into their machine and haunt them through the command line. Give ‘em a Siri-ous surprise.
 
-You can set the voice (and language!) used by say by changing the default setting in the Dictation & Speech panel in System Preferences.
+You can set the voice (and language!) used by `say` by changing the default setting in the **Dictation & Speech** panel in System Preferences.
 
+
+## 7. diskutil
+
+`diskutil` is a command line interface to the **Disk Utility** app that comes with OS X. It can do everything its graphical cousin can, but it also has some extra capabilities—such as filling a disk with zeroes or random data. Simply type `diskutil list` to see the path names of disks and removable media attached to your machine, and then point the command at the volume you want to operate on. **Be careful: `diskutil` can permanently destroy data if it’s used incorrectly**.
 
