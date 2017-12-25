@@ -114,3 +114,15 @@ You can set the voice (and language!) used by `say` by changing the default sett
 
 `diskutil` is a command line interface to the **Disk Utility** app that comes with OS X. It can do everything its graphical cousin can, but it also has some extra capabilities—such as filling a disk with zeroes or random data. Simply type `diskutil list` to see the path names of disks and removable media attached to your machine, and then point the command at the volume you want to operate on. **Be careful: `diskutil` can permanently destroy data if it’s used incorrectly**.
 
+## 8. brew
+
+Alright–this isn’t technically a native command. But no OS X power user should be without `Homebrew`. The website calls it “The missing package manager for OS X,” and that couldn’t be truer. If you’ve ever used `apt-get` in Linux, you will feel right at home in `Homebrew`.
+
+`brew` gives you easy access to thousands of free utilities and libraries from the open source community. For instance, `brew install imagemagick` will set you up with ImageMagick, a powerful utility that makes it possible to do anything from whipping up animated gifs to converting images between dozens of different types. `brew install node` will introduce you to NodeJS, the hot new tool for developing and running server-side JavaScript apps.
+
+You can have fun with Homebrew too: `brew install archey` will get you Archey, a cool little script for displaying your Mac’s specs next to a colourful Apple logo. The selection in Homebrew is huge—and because it’s so easy to create formulas, new packages are being added all the time.
+
+But the best part about Homebrew? It keeps all its files in a single directory: `/usr/local/`. That means you can install newer versions of system software, such as `python` and `mysql`, without interfering with the built-in equivalents. And if you ever want to get rid of your Homebrew installation, it’s easy to remove.
+
+Edit—May 15: Someone suggested to me that that you should not blindly delete the contents of `/usr/local/`. That’s a fair precaution. To remove Homebrew safely, use the **[uninstall script](https://gist.github.com/mxcl/1173223).
+
