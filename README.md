@@ -1,6 +1,6 @@
 # [OSX命令行用户应会的八个实用程序](OSX命令行用户应会的八个实用程序.md)
 
-
+**[Eight Terminal Utilities Every OS X Command Line User Should Know](http://www.mitchchn.me/2014/os-x-terminal/)**
 
 
 # Two WebSite, 命令行参考指南
