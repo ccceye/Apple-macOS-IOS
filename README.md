@@ -1,3 +1,14 @@
+# Two WebSite, reference guide containing syntax and examples for the most prevalent computing commands 
+
+[SS64](https://ss64.com) is a reference guide containing syntax and examples for the most prevalent computing commands (Database and Operating System). 
+
+The web design reference pages are now hosted over on [EMW3.com](https://emw3.com)
+
+
+
+
+
+---
 # Common software in macOS command line 
 
 ## 1. Brew (HomeBrew) 
